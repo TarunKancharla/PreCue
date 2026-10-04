@@ -25,6 +25,9 @@ class Player:
     def update(self, s):
         self.board = build_board(s)
 
+    def seek(self, fraction):
+        self.position = int(fraction * self.audio.shape[1])
+
     def play(self):
         self.stream.start()
 

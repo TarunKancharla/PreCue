@@ -81,4 +81,24 @@ QComboBox QAbstractItemView {
     selection-background-color: #a8d08d;
     selection-color: #16261d;
 }
+
+QSlider { min-height: 20px; }
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #2f4a3a;
+    border-radius: 3px;
+}
+QSlider::sub-page:horizontal {
+    background: #a8d08d;
+    border-radius: 3px;
+}
+QSlider::handle:horizontal {
+    background: #f2d479;
+    width: 14px;
+    margin: -4px 0;
+    border-radius: 7px;
+}
+QSlider::handle:horizontal:hover { background: #fff0a8; }
+QSlider::sub-page:horizontal:disabled { background: #2f4a3a; }
+QSlider::handle:horizontal:disabled { background: #5b7363; }
 """
